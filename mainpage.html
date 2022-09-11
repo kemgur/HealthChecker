@@ -62,7 +62,8 @@
       <p class="first-title">COVID 19</p>
       <p class="banner-text">We are aiming to Control the health of employees and Prevent epidemic disease.</p>
       <a href="login" target="_blank" class="banner-btn">Get started for free</a>
-       <br><br><br><br></div>
+       <br><br><br><br>
+      </div>
      </div>
    </div>
   </div>
@@ -70,36 +71,95 @@
 <!-- Content banner end-->
 
 <!-- Modal Login  -->
-<div id="LoginModal" class="modal fade">
-	<div class="modal-dialog modal-login">
-		<div class="modal-content">
-			<form action="/examples/actions/confirmation.php" method="post">
-				<div class="modal-header">				
-					<h4 class="modal-title">Login</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				</div>
-				<div class="modal-body">				
-					<div class="form-group">
-						<label>Username</label>
-						<input type="text" class="form-control" required="required">
-					</div>
-					<div class="form-group">
-						<div class="clearfix">
-							<label>Password</label>
-							<a href="#" class="float-right text-muted"><small>Forgot?</small></a>
-						</div>
-						
-						<input type="password" class="form-control" required="required">
-					</div>
-				</div>
-				<div class="modal-footer justify-content-between">
-					<label class="form-check-label"><input type="checkbox"> Remember me</label>
-					<input type="submit" class="btn btn-primary" value="Login">
-				</div>
-			</form>
-		</div>
-	</div>
-</div>     
+<div id="LoginModal" class="modal-style-1 dark modal ">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header p-0 mb-3 mt-3">				
+        <h4 class="modal-title">login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- dont forget to add action and action method  -->
+        <form action="" method="">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" name="email" placeholder="Enter email address" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on">
+            </div>
+          </div>
+          <div class="row pl-1 pr-1">
+                          <div class="col text-left">
+                              <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
+                                  <span class="custom-control-label">&nbsp;Remember Me</span>
+                              </label>
+                          </div>
+                          <div class="col text-right hint-text pt-0">
+                              <a href="" class="text-danger">Forgot Password?</a>
+                          </div>
+                      </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-signin">login</button>
+            
+          </div>
+        </form>
+      </div>
+      <div class="text-center mb-3">Don't have an account? <a class="register" href="#registerModal1" data-dismiss="modal" data-toggle="modal">Register</a></div>
+    </div>
+  </div>
+</div>  
+
+<div id="registerModal1" class="modal-style-1 dark modal ">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header p-0 mb-3 mt-3">				
+        <h4 class="modal-title">Register</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- dont forget to add action and action method  -->
+        <form action="" method="">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input type="text" class="form-control" name="name" placeholder="Enter your name" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" name="email" placeholder="Enter email address" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-eye-slash"></i></span>
+              <input type="password" class="form-control" name="password_confirmation" placeholder="Retype password" required="required" autocomplete="on">
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-signin">Register</button>
+            
+          </div>
+          
+        </form>
+      </div>
+      <div class="text-center mb-3">Already have an account? <a class="login" href="#loginModal1" data-dismiss="modal" data-toggle="modal">Login</a></div>
+    </div>
+  </div>
+</div> 
 <!-- login modal ends-->
 
 <!-- Services-->
