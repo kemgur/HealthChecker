@@ -291,7 +291,7 @@
 
 //reg. function
     $("#registerUser").click(function(){
-  $.post('/register',$("#registerForm"));
+  $.post('/register',$("#registerForm").serialize());
 });
 
 //login function
@@ -301,7 +301,7 @@
 //   });
 // });
 $("#userLogin").click(function(){
-  $.get('/login',$("#loginForm"),function(data,status)
+  $.get('/login',$("#loginForm").serialize(),function(data,status)
   {alert("Data: " + data + "\nStatus: " + status);
 }) .fail(function() {
   alert("Data: " + data );

@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var connection = require('../lib/db');
 
-// user registration
+// user registration //
 router.post('/register', function (req, res, next) {
     console.log(req.body)
     let username = req.body.name
@@ -12,7 +12,7 @@ router.post('/register', function (req, res, next) {
     //bcrypt 
     bcrypt.hash(req.body.password, 10)
         .then(hash => {
-            // Store hash in the database
+            
             let password = hash
             let query = "INSERT INTO user (user, email, company, password) VALUES(?, ?, ? ,?)"
             connection.query(query, [username, email, companyname, password], function (error, result) {
@@ -25,7 +25,7 @@ router.post('/register', function (req, res, next) {
 
 });
 
-// user login
+// user login // 
 router.get('/login', function (req, res, next) {
     console.log(req.query)
     let email = req.query.email

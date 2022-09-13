@@ -9,7 +9,7 @@ var authRouter = require('./routes/auth');
 var app = express();
  
 app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public'))); //use public as a website
  
 // app.use(session({ 
