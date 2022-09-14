@@ -352,3 +352,23 @@ section:nth-of-type(even) {
 .card-img-top{
 	width:458px;height:257px; border: 5px solid rgb(15, 14, 14)
 }
+.thumb-icon{
+	width: 150px;
+	height: 150px;
+}
+.flow-container{
+    background-color: #e44949;
+    margin: 30px 15px 20px 15px;
+    padding-bottom: 20px;
+    width: auto;
+}
+.col-xs-12{
+	width: 100%;
+}
+.thumb-text{
+	color: #1b216a;
+	font-family: Arial;
+}
+#check-button{
+  text-align: center;
+}
