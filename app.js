@@ -9,9 +9,11 @@ var authRouter = require('./routes/auth');
 var app = express();
  
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public'))); //use public as a website
- 
+app.use(bodyParser.urlencoded({ extended: true }));  //true
+app.use(express.static(path.join(__dirname, '/public'))); //use public as a website
+app.use('/', authRouter);
+
+///////////////////////////////////////////////////
 // app.use(session({ 
 //     secret: '123456cat',
 //     resave: false,
@@ -20,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public'))); //use public as a websi
 // }))
  
 
-app.use('/', authRouter);
+
  
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
