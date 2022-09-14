@@ -132,11 +132,15 @@ font-weight: 500;
 }
 
 section{background-color: white;
-padding: 6rem 0rem 4rem;
+padding: 2rem 2rem 2rem;
 }
 section:nth-of-type(even){background-color: #fe4066;
 color: white;}
 
+
+.card{
+	color:black;
+}
 
 
 /* Services section */
