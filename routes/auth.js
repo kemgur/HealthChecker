@@ -9,7 +9,7 @@ router.post('/register', function (req, res, next) {
     let username = req.body.name
     let email = req.body.email
     let companyname = req.body.companyname
-    //bcrypt 
+    //bcrypt password 
     bcrypt.hash(req.body.password, 10)
         .then(hash => {
             
