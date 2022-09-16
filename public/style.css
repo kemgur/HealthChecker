@@ -372,3 +372,15 @@ section:nth-of-type(even) {
 #check-button{
   text-align: center;
 }
+
+
+/* footer*/
+
+#footerSocial{
+    margin-right: 0px;
+    margin-left: 360px;
+
+}
+.nowrap{
+white-space: nowrap;
+}
