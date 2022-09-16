@@ -45,6 +45,7 @@ body {
 	background-position: center center;
 	background-size: cover;
 	padding-top: 250px;
+	padding-bottom: 0px;
 }
 
 .content-banner:before {
