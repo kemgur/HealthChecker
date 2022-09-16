@@ -350,7 +350,7 @@ white-space: nowrap;
 
 /*Containers balance*/
 #Services {
-	padding-bottom: 200px;
+	padding-bottom: 0px;
 }
 
 #Why {
@@ -382,7 +382,6 @@ white-space: nowrap;
 #check-button{
   text-align: center;
 }
-
 
 
 
