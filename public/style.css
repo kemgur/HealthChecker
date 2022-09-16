@@ -337,6 +337,15 @@ section:nth-of-type(even) {
 	margin-bottom: 0;
 }
 
+#footerSocial{
+    margin-right: 0px;
+    margin-left: 360px;
+
+}
+.nowrap{
+white-space: nowrap;
+}
+
 
 /*Containers balance*/
 #Services {
@@ -374,13 +383,5 @@ section:nth-of-type(even) {
 }
 
 
-/* footer*/
 
-#footerSocial{
-    margin-right: 0px;
-    margin-left: 360px;
 
-}
-.nowrap{
-white-space: nowrap;
-}
