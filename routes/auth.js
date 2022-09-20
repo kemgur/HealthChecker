@@ -59,6 +59,7 @@ router.get('/login', function (req, res, next) {
 });
 let username = 'burak'
 let password = '1235567'
+//////////////
 // let query = "SELECT * FROM user WHERE user=? AND password=?;"                  //${} for SQL inj.
 // let query = "INSERT INTO user (user, password) VALUES('burak', 'lina12312');"
 // console.log(query)
